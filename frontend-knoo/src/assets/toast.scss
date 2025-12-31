@@ -1,0 +1,40 @@
+.v-toast {
+    z-index: 10 !important;
+
+    &__item {
+        min-width: 318px !important;
+        border-radius: 20px !important;
+
+        &--success {
+            background-color: var(--color-success) !important;
+            color: var(--color-white) !important;
+            font-weight: 600 !important;
+
+            .v-toast__icon {
+                background: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 28C17.5759 28 19.1363 27.6896 20.5922 27.0866C22.0481 26.4835 23.371 25.5996 24.4853 24.4853C25.5996 23.371 26.4835 22.0481 27.0866 20.5922C27.6896 19.1363 28 17.5759 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62902 24.4853 7.51472C23.371 6.40042 22.0481 5.5165 20.5922 4.91345C19.1363 4.31039 17.5759 4 16 4C12.8174 4 9.76516 5.26428 7.51472 7.51472C5.26428 9.76516 4 12.8174 4 16C4 19.1826 5.26428 22.2348 7.51472 24.4853C9.76516 26.7357 12.8174 28 16 28Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 16L14.6667 18.6667L20 13.3333" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+            }
+        }
+    
+        &--error {
+            background-color: var(--color-error) !important;
+            color: var(--color-white) !important;
+            font-weight: 600 !important;
+
+            .v-toast__icon {
+                background: url('data:image/svg+xml,<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.25 5.75L5.75 17.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.75 5.75L17.25 17.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>') !important;
+            }
+        }
+        
+        &--info {
+    
+        }
+        &--warning {
+           
+        }
+    }
+
+    &__text {
+        font-family: var(--font-family);
+        font-size: 14px !important;
+    }
+}

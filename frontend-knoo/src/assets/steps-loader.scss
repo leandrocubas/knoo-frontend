@@ -1,0 +1,112 @@
+.steps-loader {
+    justify-content: space-evenly;
+    display: flex;
+    margin: 30px 0;
+
+    &__step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: .6s;
+        position: relative;
+        min-height: 70px;
+        
+        &--loading {
+            transition: .6s;
+            .icon {
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                transition: .6s;
+            }
+            .loader {
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                border-top: 1px solid var(--color-primary);
+                animation: spinner 1s ease infinite;
+                position: absolute;
+            }
+            .label {
+                color: var(--color-white);
+                font-size: 12px;
+                margin-top: 8rem;
+                font-weight: 600;
+            }
+        }
+
+        &--active {
+            transition: .6s;
+            .icon {
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                transition: .6s;
+            }
+            .loader {
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                border: 1px solid var(--color-primary);
+                position: absolute;
+            }
+            .label {
+                margin-top: 8rem;
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+
+        &--pending {
+            transition: .6s;    
+            .icon {
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                transition: .6s;
+            }
+            .loader {
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                border: 1px solid #505050;
+                position: absolute;
+            }
+            .label {
+                margin-top: 8rem;
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+
+        &--completed {
+            transition: .6s;     
+            .icon {
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                transition: .6s;
+            }
+            .loader {
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                background: var(--linear-gradient-primary);
+                position: absolute;
+            }
+            .label {
+                margin-top: 8rem;
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &--message {
+        color: #9A9A9A;
+        font-size: 12px;
+        text-align: center;
+    }
+}

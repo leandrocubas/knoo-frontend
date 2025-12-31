@@ -1,0 +1,77 @@
+.dialog {
+    &__content {
+        padding: 20px;
+        display: grid;
+        row-gap: 32px;
+
+        &--delete-icon {
+        justify-content: center;
+        display: flex;
+        &--icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border-radius: 100%;
+            background-color: var(--color-error);
+            svg {
+            width: 24px;
+            }
+        }
+        }
+
+        &--title {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        padding-bottom: 76px;
+
+        span {
+            font-size: 14px;
+            text-align: center;
+        }
+        label {
+            font-size: 16px;
+            font-family: var(--font-family-bold);
+            text-align: center;
+        }
+        }
+
+        &--modules-label {
+        p {
+            font-family: var(--font-family-bold);
+        }
+
+        span {
+            color: var(--color-gray);
+        }
+        }
+
+        &--modules-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 16px;
+        }
+    }
+  
+    &__footer {
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(var(--color-gray-rgb), 0.3);
+        span {
+        cursor: pointer;
+        }
+
+        &--button {
+            width: 182px;
+        }
+    }
+}

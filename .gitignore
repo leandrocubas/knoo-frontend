@@ -1,0 +1,17 @@
+frontend-knoo/node_modules/
+frontend-knoo/.codecatalyst
+frontend-knoo/.aws
+security
+frontend-knoo/node_modules/
+frontend-knoo/.codecatalyst/
+frontend-knoo/.aws/
+frontend-knoo/.gitignore
+frontend-knoo/.nvmrc
+frontend-knoo/.vscode
+frontend-knoo/.env
+frontend-knoo/.env.test
+frontend-knoo/.env.production
+frontend-knoo/.env.development
+frontend-knoo/.env.staging
+frontend-knoo/.env.production
+frontend-knoo/.env.staging
